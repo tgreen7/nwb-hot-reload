@@ -1,17 +1,12 @@
 import React, { Component } from 'react'
+import { hot } from "react-hot-loader";
 import './App.css'
 
 
 class App extends Component {
-  renderSomething() {
+  renderSomething = () => {
     return <div>
-      somethingwafeawef
-    </div>
-  }
-
-  renderSomethingElse() {
-    return <div>
-      something elsewef
+      fiwoeweg gaweg d weofawef
     </div>
   }
 
@@ -19,10 +14,9 @@ class App extends Component {
     return (
       <div>
         {this.renderSomething()}
-        {this.renderSomethingElse()}
       </div>
     )
   }
 }
 
-export default App
+export default hot(module)(App);
