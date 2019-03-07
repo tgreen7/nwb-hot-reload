@@ -1,21 +1,12 @@
-import React, { Component } from 'react'
-import './App.css'
+import React, { Component } from "react";
+import { test1 } from "./utils";
+import "./App.css";
 
-
+test1();
 class App extends Component {
-  renderSomething = () => {
-    return <div>
-      fiwoeweg gaweg d weofawef
-    </div>
-  }
-
   render() {
-    return (
-      <div>
-        {this.renderSomething()}
-      </div>
-    )
+    return <div>Welcome to App</div>;
   }
 }
 
-export default App
+export default App;
